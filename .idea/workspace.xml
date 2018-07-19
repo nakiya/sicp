@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="af5c10d3-8573-44a2-9969-4031126b9d1d" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sicp/core.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chapter1.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sicp/chapter1.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="838">
+              <caret line="243" column="16" selection-start-line="243" selection-start-column="16" selection-end-line="243" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/core.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15000">
+              <caret line="1000" column="6" selection-start-line="1000" selection-start-column="6" selection-end-line="1000" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/src/sicp/chapter1.clj" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sicp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sicp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sicp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sicp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sicp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sicp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sicp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="cursive.last.file.extension./Volumes/Work/Personal/projects/sicp/src" value="clj" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="ReplState" timestamp="1531981560746">{:repl-history {:ide [], :local [{:command &quot;(Math/abs 10)&quot;, :offset 13, :ns &quot;sicp.core&quot;} {:command &quot;(sqrt 10)&quot;, :offset 9, :ns &quot;sicp.chapter1&quot;} {:command &quot;(require '[clojure.tools.trace :as trace])\n&quot;, :offset 43, :ns &quot;sicp.chapter1&quot;} {:command &quot;(require [clojure.tools.trace :as trace])&quot;, :offset 41, :ns &quot;sicp.chapter1&quot;} {:command &quot;(time)&quot;, :offset 6, :ns &quot;sicp.core&quot;} {:command &quot;(mod 10 4)&quot;, :offset 10, :ns &quot;sicp.core&quot;} {:command &quot;(smallest-divisor 10)&quot;, :offset 21, :ns &quot;sicp.chapter1&quot;} {:command &quot;(smallest-divisor 199)&quot;, :offset 22, :ns &quot;sicp.chapter1&quot;} {:command &quot;(smallest-divisor 1999)&quot;, :offset 23, :ns &quot;sicp.chapter1&quot;} {:command &quot;(smallest-divisor 19999)&quot;, :offset 24, :ns &quot;sicp.chapter1&quot;} {:command &quot;(smallest-divisor 199999)&quot;, :offset 25, :ns &quot;sicp.chapter1&quot;} {:command &quot;(smallest-divisor 1999999)&quot;, :offset 26, :ns &quot;sicp.chapter1&quot;} {:command &quot;(smallest-divisor 19999999)&quot;, :offset 27, :ns &quot;sicp.chapter1&quot;} {:command &quot;(smallest-divisor 199999999)&quot;, :offset 28, :ns &quot;sicp.chapter1&quot;} {:command &quot;(smallest-divisor 35)&quot;, :offset 21, :ns &quot;sicp.chapter1&quot;} {:command &quot;(prime? 89)&quot;, :offset 11, :ns &quot;sicp.chapter1&quot;} {:command &quot;(runtime)&quot;, :offset 9, :ns &quot;sicp.chapter1&quot;} {:command &quot;(time nil)&quot;, :offset 10, :ns &quot;sicp.chapter1&quot;} {:command &quot;(find-three-smallest-primes-after 1000)&quot;, :offset 39, :ns &quot;sicp.chapter1&quot;} {:command &quot;(System/currentTimeMillis)&quot;, :offset 26, :ns &quot;sicp.chapter1&quot;} {:command &quot;(find-three-smallest-primes-after 10000)&quot;, :offset 40, :ns &quot;sicp.chapter1&quot;} {:command &quot;(find-three-smallest-primes-after 100000)&quot;, :offset 41, :ns &quot;sicp.chapter1&quot;} {:command &quot;(find-three-smallest-primes-after 1000000)&quot;, :offset 42, :ns &quot;sicp.chapter1&quot;} {:command &quot;(defn find-three-smallest-primes-after [n]\n  (letfn [(print-time [n]\n            (time (prime? n))\n            n)\n          (helper [n count]\n            (println n)\n            (if (prime? n)\n              (helper (+ 1 (print-time n)) (- count 1))\n              (helper (+ 1 n) count)))]\n    (helper (+ 1 n) 3)))&quot;, :offset 313, :ns &quot;sicp.chapter1&quot;} {:command &quot;(defn smallest-divisor [n]\n  (letfn [(divides? [n divisor] (= 0 (mod n divisor)))\n          (find-divisor [n test-divisor]\n            (cond (&gt; (square test-divisor) n) n\n                  (divides? n test-divisor) test-divisor\n                  :else (find-divisor n (+ 1 test-divisor))))]\n    (find-divisor n 2)))&quot;, :offset 315, :ns &quot;sicp.chapter1&quot;} {:command &quot;(find-three-smallest-primes-after 10000000)&quot;, :offset 43, :ns &quot;sicp.chapter1&quot;} {:command &quot;(find-three-smallest-primes-after 1000000000)&quot;, :offset 45, :ns &quot;sicp.chapter1&quot;} {:command &quot;(find-three-smallest-primes-after 10000000000)&quot;, :offset 46, :ns &quot;sicp.chapter1&quot;} {:command &quot;(defn smallest-divisor [n]\n  (letfn [(next [n] (if (= 2 n) 3 (+ n 2)))\n          (divides? [n divisor] (= 0 (mod n divisor)))\n          (find-divisor [n test-divisor]\n            (cond (&gt; (square test-divisor) n) n\n                  (divides? n test-divisor) test-divisor\n                  :else (find-divisor n (next test-divisor))))]\n    (find-divisor n 2)))&quot;, :offset 360, :ns &quot;sicp.chapter1&quot;} {:command &quot;(find-three-smallest-primes-after 100000000)&quot;, :offset 44, :ns &quot;sicp.chapter1&quot;} {:command &quot;(rand 10)&quot;, :offset 9, :ns &quot;sicp.chapter1&quot;} {:command &quot;(rand-int 10)&quot;, :offset 13, :ns &quot;sicp.chapter1&quot;} {:command &quot;(take-while #(not= % 3) (repeatedly #(rand-int 100)))&quot;, :offset 53, :ns &quot;sicp.chapter1&quot;} {:command &quot;(take-while #(even? %) (repeatedly #(rand-int 100)))&quot;, :offset 52, :ns &quot;sicp.chapter1&quot;} {:command &quot;(take-while #(not= % 3) (repeatedly #(rand-int 10)))&quot;, :offset 52, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 2 2 3)&quot;, :offset 14, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 2 4 6)&quot;, :offset 14, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 2 3 7)&quot;, :offset 14, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 2 16 7)&quot;, :offset 15, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 2 4 8)&quot;, :offset 14, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 2 4 9)&quot;, :offset 14, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 5)&quot;, :offset 15, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 4)&quot;, :offset 15, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 7)&quot;, :offset 15, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 199)&quot;, :offset 17, :ns &quot;sicp.chapter1&quot;} {:command &quot;(java.math.BigInteger 10)&quot;, :offset 25, :ns &quot;sicp.chapter1&quot;} {:command &quot;(java.math.BigInteger. 10)&quot;, :offset 26, :ns &quot;sicp.chapter1&quot;} {:command &quot;(java.math.BigInteger.)&quot;, :offset 23, :ns &quot;sicp.chapter1&quot;} {:command &quot;(java.math.BigInteger. \&quot;10\&quot;)&quot;, :offset 28, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 189 1999 1999)&quot;, :offset 22, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 187 1999 1999)&quot;, :offset 22, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 187 1999 199)&quot;, :offset 21, :ns &quot;sicp.chapter1&quot;} {:command &quot;(defn expmod [base exp m]\n  (let [bibase (BigInteger. (str base))\n        biexp (BigInteger. (str exp))\n        bim (BigInteger. (str m))\n        bizero (BigInteger. (str 0))\n        bione (BigInteger. (str 1))\n        bitwo (BigInteger. (str 2))]\n    (cond (= (.compareTo biexp bizero) 0) bione\n          (.mod biexp bitwo) (.mod (expmod (bisquare bibase) (.divide biexp bitwo) bim) bim)\n          :else (mod (.multiply bibase (expmod bibase (.subtract biexp bione) bim)) bim))))&quot;, :offset 480, :ns &quot;sicp.chapter1&quot;} {:command &quot;(require '[clojure.tools.trace :as trace])&quot;, :offset 42, :ns &quot;sicp.chapter1&quot;} {:command &quot;(trace/trace-ns 'sicp.chapter1)&quot;, :offset 31, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 2 4 7)&quot;, :offset 14, :ns &quot;sicp.chapter1&quot;} {:command &quot;(.modPow (BigInt. 189) (BigInt. 1999) (BigInt. 199))&quot;, :offset 52, :ns &quot;sicp.chapter1&quot;} {:command &quot;(.modPow (BigInt. (str 189) (BigInt. (str 1999)) (BigInt. (str 199))))&quot;, :offset 70, :ns &quot;sicp.chapter1&quot;} {:command &quot;(.modPow (BigInt. (str 189)) (BigInt. (str 1999)) (BigInt. (str 199)))&quot;, :offset 70, :ns &quot;sicp.chapter1&quot;} {:command &quot;(.modPow (BigInteger. (str 189)) (BigInteger. (str 1999)) (BigInteger. (str 199)))&quot;, :offset 82, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 189 1999 199)&quot;, :offset 21, :ns &quot;sicp.chapter1&quot;} {:command &quot;(expmod 189N 1999N 199N)&quot;, :offset 24, :ns &quot;sicp.chapter1&quot;} {:command &quot;(BigInt. 10)&quot;, :offset 12, :ns &quot;sicp.chapter1&quot;} {:command &quot;(BigInt)&quot;, :offset 8, :ns &quot;sicp.chapter1&quot;} {:command &quot;(BigInt 10)&quot;, :offset 11, :ns &quot;sicp.chapter1&quot;} {:command &quot;(bigint 30)&quot;, :offset 11, :ns &quot;sicp.chapter1&quot;} {:command &quot;(= 10N 10)&quot;, :offset 10, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 1999)&quot;, :offset 18, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 19999)&quot;, :offset 19, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 199999)&quot;, :offset 20, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 1999999)&quot;, :offset 21, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 19999999)&quot;, :offset 22, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 1001)&quot;, :offset 18, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 1003)&quot;, :offset 18, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 1005)&quot;, :offset 18, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 1007)&quot;, :offset 18, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 1009)&quot;, :offset 18, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 1011)&quot;, :offset 18, :ns &quot;sicp.chapter1&quot;} {:command &quot;(fermat-test 1013)&quot;, :offset 18, :ns &quot;sicp.chapter1&quot;} {:command &quot;(time (fermat-test 1000037))&quot;, :offset 28, :ns &quot;sicp.chapter1&quot;} {:command &quot;(time (fermat-test 1000000007))&quot;, :offset 31, :ns &quot;sicp.chapter1&quot;}], :remote []}}</component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="REPL" type="ClojureREPL" factoryName="Local">
+      <module name="sicp" />
+      <setting name="replType" value="1" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af5c10d3-8573-44a2-9969-4031126b9d1d" name="Default" comment="" />
+      <created>1531821071668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531821071668</updated>
+      <workItem from="1531821073426" duration="432000" />
+      <workItem from="1531877607291" duration="10770000" />
+      <workItem from="1531923309521" duration="6999000" />
+      <workItem from="1531966692223" duration="6882000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25083000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32948583" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="right" id="REPL" order="3" side_tool="true" visible="true" weight="0.35059524" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Leiningen" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sicp/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15000">
+          <caret line="1000" column="6" selection-start-line="1000" selection-start-column="6" selection-end-line="1000" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sicp/chapter1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2355">
+          <caret line="157" column="38" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sicp/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sicp/chapter1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sicp/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sicp/chapter1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sicp/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15000">
+          <caret line="1000" column="6" selection-start-line="1000" selection-start-column="6" selection-end-line="1000" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sicp/chapter1.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="243" column="16" selection-start-line="243" selection-start-column="16" selection-end-line="243" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
