@@ -242,3 +242,26 @@
   (accumulate * 1 term a next b))
 
 ;; Exercise 1.33
+(defn filtered-accumulate [combiner null-value filter term a next b]
+  "Iterative version only."
+  (letfn [(helper [a result]
+            (if (> a b)
+              result
+              (helper (next a)
+                      (if (filter a)
+                        (combiner result (term a))
+                        result))))]
+    (helper a null-value)))
+
+(defn sum-primes [a b]
+  (filtered-accumulate + 0 prime? identity a inc b))
+
+(defn gcd [a b]
+  (if (= b 0)
+    a
+    (gcd b (mod a b))))
+
+(defn gcd-prod [n]
+  (letfn [(coprime? [x] (= (gcd n x) 1))]
+    (filtered-accumulate * 1 coprime? identity 1 inc (- n 1))))
+
