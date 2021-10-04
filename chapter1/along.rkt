@@ -4,6 +4,8 @@
 
 (define (square x) (* x x))
 
+(define (cube x) (* x x x))
+
 (define (sum-of-squares x y) (+ (square x) (square y)))
 
 (define (abs x)
@@ -488,4 +490,114 @@
         ((miller-rabin-test n) (miller-rabin-fast-prime? n (- times 1)))
         (else false)))
 
+;;; 1.3
+
+(define (sum term a next b)
+  (if (> a b)
+      0
+      (+ (term a)
+         (sum term (next a) next b))))
+
+(define (inc n) (+ 1 n))
+
+(define (sum-cubes a b)
+  (sum cube a inc b))
+
+(define (identity x) x)
+
+(define (sum-integers a b)
+  (sum identity a inc b))
+
+(define (pi-sum a b)
+  (define (pi-term a)
+    (/ 1.0 (* a (+ a 2))))
+  (define (pi-next a)
+    (+ a 4))
+  (sum pi-term a pi-next b))
+
+(define (integral f a b dx)
+  (define (integral-next x)
+    (+ x dx))
+  (* (sum f (+ a (/ dx 2.0)) integral-next b) dx))
+
+;; Exercise 1.29
+(define (simpson-integral f a b n)
+  (define (simpson-term i)
+    (* (cond ((or (= i 0) (= i n)) 1)
+             ((even? i) 2)
+             (else 4))
+    (f (+ a (* i (/ (- b a) n))))))
+  (/ (* (-  b a) (sum simpson-term 0 inc n)) (* 3 n)))
+
+;; Exercise 1.30
+(define (sum-iter term a next b)
+  (define (iter a result)
+    (if (> a b)
+        result
+        (iter (next a) (+ result (term a)))))
+  (iter a 0))
+
+;; Exercise 1.31
+(define (product term a next b)
+  (if (> a b)
+      1
+      (* (term a)
+         (product term (next a) next b))))
+
+(define (factorial n)
+  (product identity 1 inc n))
+
+(define (pi-approx n)
+  (define (pi-term i)
+    (/ (* i (+ i 2)) (square (+ i 1))))
+  (define (pi-next i)
+    (+ i 2))
+  (* 4.0 (product pi-term 2 pi-next (* 2 n))))
+
+(define (product-iter term a next b)
+  (define (iter a result)
+    (if (> a b)
+        result
+        (iter (next a) (* result (term a)))))
+  (iter a 1))
+
+;; Exercise 1.32
+(define (accumulator combiner null-value term a next b)
+  (define (acc term a next b)
+    (if (> a b)
+        null-value
+        (combiner (term a) (acc term (next a) next b))))
+  (acc term a next b))
+
+(define (acc-sum term a next b)
+  (accumulator + 0 term a next b))
+
+(define (acc-prod term a next b)
+  (accumulator * 1 term a next b))
+
+(define (accumulator-iter combiner null-value term a next b)
+  (define (iter a result)
+    (if (> a b)
+        result
+        (iter (next a) (combiner (term a) result))))
+  (iter a null-value))
+
+(define (acc-sum-iter term a next b)
+  (accumulator-iter + 0 term a next b))
+
+;; Exercise 1.33
+(define (filtered-accumulate filterer combiner null-value term a next b)
+  (define (iter a result)
+    (if (> a b)
+        result
+        (iter (next a) (combiner (if (filterer a) (term a) null-value) result))))
+  (iter a null-value))
+
+(define (prime-sum a b)
+  (filtered-accumulate prime? + 0 identity a inc b))
+
+(define (prod-of-relative-primes n)
+  (define (coprime? i)
+    (= (gcd i n) 1))
+  (filtered-accumulate coprime? * 1 identity 1 inc n))
 
