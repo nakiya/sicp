@@ -14,7 +14,7 @@
         ((< x 0) (- x))))
 
 ;;Exercise 1.2
-(/ (+ 5 4 (- 2 (- 3 (+ 6 4/5)))) (* (- 6 2) (- 2 7)))
+;(/ (+ 5 4 (- 2 (- 3 (+ 6 4/5)))) (* (- 6 2) (- 2 7)))
 
 ;;Exercise 1.3
 (define (sum-of-larger-nums x y z)
@@ -601,3 +601,125 @@
     (= (gcd i n) 1))
   (filtered-accumulate coprime? * 1 identity 1 inc n))
 
+;;
+(define (close-enough? x y)
+  (< (abs (- x y)) 0.001))
+
+(define (search f neg-point pos-point)
+  (let ((midpoint (average neg-point pos-point)))
+    (if (close-enough? neg-point pos-point)
+        midpoint
+        (let ((test-value (f midpoint)))
+          (cond ((positive? test-value) (search f neg-point midpoint))
+                ((negative? test-value) (search f midpoint pos-point))
+                (else midpoint))))))
+
+(define (half-interval-method f a b)
+  (let ((a-value (f a))
+        (b-value (f b)))
+    (cond ((and (negative? a-value) (positive? b-value)) (search f a b))
+          ((and (negative? b-value) (positive? a-value)) (search f b a))
+          (else (error "Values are not of opposite sign" a b)))))
+
+(define tolerance 0.00001)
+
+(define (fixed-point f first-guess)
+  (let ((value (f first-guess)))
+    (if (< (abs (- value first-guess)) tolerance)
+        value
+        (fixed-point f value))))
+
+(define (sqrt-fp x)
+  (fixed-point (lambda (y) (average (/ x y) y)) 1.0))
+
+;; Exercise 1.35
+(define (golden-ratio)
+  (fixed-point (lambda (x) (+ 1 (/ 1.0 x))) 1.0))
+
+;; Exercise 1.36
+(define (fixed-point-disp f first-guess)
+  (newline)
+  (let ((value (f first-guess)))
+    (display "Guess : ")
+    (display value)
+    (if (< (abs (- value first-guess)) tolerance)
+        value
+        (fixed-point-disp f value))))
+
+; Without average damping
+; (fixed-point-disp (lambda (x) (/ (log 1000) (log x))) 1.1)
+; 26 steps
+
+; With average damping
+; (fixed-point-disp (lambda (x) (average x (/ (log 1000) (log x)))) 1.1)
+; 10 steps
+
+;; Exercise 1.37
+(define (cont-frac n d k)
+  (define (cf i)
+    (if (> i k)
+        0 
+        (/ (n i) (+ (d i) (cf (inc i))))))
+  (cf 1))
+
+; Iterative version. Work backwards starting with the last term.
+(define (cont-frac-iter n d k)
+  (define (iter i result)
+    (if (= i 0)
+        result
+        (iter (- i 1)
+              (/ (n i) (+ (d i) result)))))
+  (iter k 0))
+
+;; Exercise 1.38
+(define (e-cf k)
+  (+ 2 (cont-frac-iter (lambda (i) 1.0)
+                       (lambda (i) (if (not (= 0 (remainder (+ 1 i) 3)))
+                                       1
+                                       (* 2 (/ (+ i 1) 3))))
+                       k)))
+
+;; Exercise 1.39
+(define (tan-cf x k)
+  (let ((sqx (- (square x))))
+    (cont-frac-iter (lambda (i) (if (=  i 1) x sqx)) (lambda (i) (- (* 2 i) 1)) k)))
+
+;;; 1.3.4
+(define (average-damp f)
+  (lambda (x) (average x (f x))))
+
+(define (sqrt3 x)
+  (fixed-point-disp (average-damp (lambda (y) (/ x y))) 1.0))
+
+(define (cube-root x)
+  (fixed-point (average-damp (lambda (y) (/ x (square y)))) 1.0))
+
+(define dx 0.00001)
+
+(define (deriv g)
+  (lambda (x)
+    (/ (- (g (+ x dx)) (g x))
+       dx)))
+
+(define (newton-transform g)
+  (lambda (x)
+    (- x (/ (g x) ((deriv g) x)))))
+
+(define (newtons-method g guess)
+  (fixed-point (newton-transform g) guess))
+
+(define (sqrt4 x)
+  (newtons-method (lambda (y) (- (square y) x)) 1.0))
+
+(define (fixed-point-of-transform g transform guess)
+  (fixed-point (transform g) guess))
+
+(define (sqrt5 x)
+  (fixed-point-of-transform (lambda (y) (/ x y))
+                            average-damp
+                            1.0))
+
+(define (sqrt6 x)
+  (fixed-point-of-transform (lambda (y) (- (square y) x))
+                            newton-transform
+                            1.0))
