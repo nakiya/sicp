@@ -637,14 +637,16 @@
   (fixed-point (lambda (x) (+ 1 (/ 1.0 x))) 1.0))
 
 ;; Exercise 1.36
-(define (fixed-point-disp f first-guess)
+(define (fixed-point-disp f first-guess n)
   (newline)
   (let ((value (f first-guess)))
     (display "Guess : ")
-    (display value)
-    (if (< (abs (- value first-guess)) tolerance)
-        value
-        (fixed-point-disp f value))))
+    (display first-guess)
+    (if ( = n 0)
+        first-guess
+        (if (< (abs (- value first-guess)) tolerance)
+            value
+            (fixed-point-disp f value (- n 1))))))
 
 ; Without average damping
 ; (fixed-point-disp (lambda (x) (/ (log 1000) (log x))) 1.1)
@@ -723,3 +725,64 @@
   (fixed-point-of-transform (lambda (y) (- (square y) x))
                             newton-transform
                             1.0))
+
+;; Exercise 1.40
+(define (cubic a b c)
+  (lambda (x) (+ (cube x) (* a (square x)) (* b x) c)))
+
+;; Exercise 1.41
+(define (double-fn f)
+  (lambda (x) (f (f  x))))
+
+;; Exercise 1.42
+(define (compose f g)
+  (lambda (x) (f (g x))))
+
+;; Exercise 1.43
+(define (repeated f n)
+  (lambda (x)
+    (define (iter i result)
+      (if (> i n)
+          result
+          (iter (inc i) (f result))))
+    (iter 1 x)))
+
+(define (repeated2 f n)
+  (accumulator compose identity (lambda (i) f) 1 inc n))
+
+;; Exercise 1.44
+(define (smooth f)
+  (lambda (x) (/ (+ (f (- x dx)) (f x) (f (+ x dx))) 3)))
+
+(define (smooth-n f n)
+  ((repeated2 smooth n) f))
+
+;; Exercise 1.45
+; damps needed are (floor (log2(n)) where required root is n.
+(define (average-damp-n f n)
+  ((repeated average-damp n) f))
+
+(define (nth-root x n)
+  (fixed-point
+   (average-damp-n (lambda (y) (/ x (expt y (- n 1)))) (floor (log n 2)))
+   1.0))
+
+;; Exercise 1.46
+(define (iterative-improve good-enough? improve)
+  (define (iter guess)
+    (if (good-enough? guess)
+        guess
+        (iter (improve guess))))
+  iter)
+
+(define (sqrt7 x)
+  ((iterative-improve
+    (lambda (y) (< (abs (- (square y) x)) 0.0001))
+    (lambda (y) (average y (/ x y))))
+   1.0))
+
+(define (fixed-point-2 f first-guess)
+  ((iterative-improve
+    (lambda (x) (< (abs (- x (f x))) 0.0001))
+    f)
+   first-guess))
